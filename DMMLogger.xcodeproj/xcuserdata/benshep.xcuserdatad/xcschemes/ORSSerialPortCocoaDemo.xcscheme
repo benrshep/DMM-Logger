@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9D66D80D159BCAB800EE6D09"
                BuildableName = "ORSSerialPortCocoaDemo.app"
-               BlueprintName = "ORSSerialPortCocoaDemo"
-               ReferencedContainer = "container:ORSSerialPortCocoaDemo.xcodeproj">
+               BlueprintName = "DMMLogger"
+               ReferencedContainer = "container:DMMLogger.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9D66D80D159BCAB800EE6D09"
             BuildableName = "ORSSerialPortCocoaDemo.app"
-            BlueprintName = "ORSSerialPortCocoaDemo"
-            ReferencedContainer = "container:ORSSerialPortCocoaDemo.xcodeproj">
+            BlueprintName = "DMMLogger"
+            ReferencedContainer = "container:DMMLogger.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -53,8 +53,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9D66D80D159BCAB800EE6D09"
             BuildableName = "ORSSerialPortCocoaDemo.app"
-            BlueprintName = "ORSSerialPortCocoaDemo"
-            ReferencedContainer = "container:ORSSerialPortCocoaDemo.xcodeproj">
+            BlueprintName = "DMMLogger"
+            ReferencedContainer = "container:DMMLogger.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -71,8 +71,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9D66D80D159BCAB800EE6D09"
             BuildableName = "ORSSerialPortCocoaDemo.app"
-            BlueprintName = "ORSSerialPortCocoaDemo"
-            ReferencedContainer = "container:ORSSerialPortCocoaDemo.xcodeproj">
+            BlueprintName = "DMMLogger"
+            ReferencedContainer = "container:DMMLogger.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

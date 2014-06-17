@@ -24,7 +24,7 @@
 //	TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 //	SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#import "ORSSerialPortDemoController.h"
+#import "DMMLoggerController.h"
 #import "ORSSerialPortManager.h"
 
 @implementation ORSSerialPortDemoController
@@ -55,12 +55,6 @@
 }
 
 #pragma mark - Actions
-
-- (IBAction)send:(id)sender
-{
-	NSData *dataToSend = [self.sendTextField.stringValue dataUsingEncoding:NSUTF8StringEncoding];
-	[self.serialPort sendData:dataToSend];
-}
 
 - (IBAction)openOrClosePort:(id)sender
 {
@@ -181,7 +175,6 @@
 
 #pragma mark - Properties
 
-@synthesize sendTextField = _sendTextField;
 @synthesize receivedDataTextView = _receivedDataTextView;
 @synthesize openCloseButton = _openCloseButton;
 
