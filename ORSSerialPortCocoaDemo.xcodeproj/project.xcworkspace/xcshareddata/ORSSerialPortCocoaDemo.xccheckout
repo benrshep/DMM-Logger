@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>E98442A8-C16E-4D61-A06B-927028EBE60B</string>
+	<string>1D4F4747-81DC-455D-998A-10451D678107</string>
 	<key>IDESourceControlProjectName</key>
 	<string>ORSSerialPortCocoaDemo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>3CF0E6AA-7571-4727-A9DE-28B2B0F54801</key>
-		<string>https://github.com/armadsen/ORSSerialPort.git</string>
+		<key>53C16302-5E45-4F36-B9A8-C83414CDE60C</key>
+		<string>https://github.com/benrshep/DMM-Logger.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Examples/CocoaDemo/ORSSerialPortCocoaDemo.xcodeproj/project.xcworkspace</string>
+	<string>ORSSerialPortCocoaDemo.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>3CF0E6AA-7571-4727-A9DE-28B2B0F54801</key>
-		<string>../../../..</string>
+		<key>53C16302-5E45-4F36-B9A8-C83414CDE60C</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/armadsen/ORSSerialPort.git</string>
+	<string>https://github.com/benrshep/DMM-Logger.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>3CF0E6AA-7571-4727-A9DE-28B2B0F54801</string>
+	<string>53C16302-5E45-4F36-B9A8-C83414CDE60C</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>3CF0E6AA-7571-4727-A9DE-28B2B0F54801</string>
+			<string>53C16302-5E45-4F36-B9A8-C83414CDE60C</string>
 			<key>IDESourceControlWCCName</key>
-			<string>ORSSerialPort</string>
+			<string>DMM Logger</string>
 		</dict>
 	</array>
 </dict>

@@ -339,7 +339,8 @@ static __strong NSMutableArray *allSerialPorts;
 		if (DCDPin != self.DCD)
 			dispatch_sync(mainQueue, ^{self.DCD = DCDPin;});
 	});
-	self.pinPollTimer = timer;
+	
+    self.pinPollTimer = timer;
 	dispatch_resume(self.pinPollTimer);
 	ORS_GCD_RELEASE(timer);
 }
@@ -777,6 +778,7 @@ static __strong NSMutableArray *allSerialPorts;
 @synthesize writeBuffer = _writeBuffer;
 @synthesize fileDescriptor = _fileDescriptor;
 @synthesize pinPollTimer = _pinPollTimer;
+
 - (void)setPinPollTimer:(dispatch_source_t)timer
 {
 	if (timer != _pinPollTimer)

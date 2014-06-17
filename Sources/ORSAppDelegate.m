@@ -33,7 +33,10 @@
 - (void)applicationWillTerminate:(NSNotification *)notification
 {
 	NSArray *ports = [[ORSSerialPortManager sharedSerialPortManager] availablePorts];
-	for (ORSSerialPort *port in ports) { [port close]; } 
+	
+    for (ORSSerialPort *port in ports) {
+        [port close];
+    }
 }
 
 @synthesize window = _window;
