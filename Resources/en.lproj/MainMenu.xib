@@ -791,7 +791,7 @@
             </connections>
         </customObject>
         <customObject id="420" customClass="NSFontManager"/>
-        <customObject id="536" customClass="ORSSerialPortDemoController">
+        <customObject id="536" customClass="DMMLoggerController">
             <connections>
                 <outlet property="openCloseButton" destination="690" id="692"/>
                 <outlet property="receivedDataTextView" destination="585" id="625"/>

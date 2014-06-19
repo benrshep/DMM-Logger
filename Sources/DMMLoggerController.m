@@ -26,8 +26,9 @@
 
 #import "DMMLoggerController.h"
 #import "ORSSerialPortManager.h"
+#import "DMMData.h"
 
-@implementation ORSSerialPortDemoController
+@implementation DMMLoggerController
 
 - (id)init
 {
@@ -37,7 +38,6 @@
         self.serialPortManager = [ORSSerialPortManager sharedSerialPortManager];
 		self.availableBaudRates = [NSArray arrayWithObjects: [NSNumber numberWithInteger:300], [NSNumber numberWithInteger:1200], [NSNumber numberWithInteger:2400], [NSNumber numberWithInteger:4800], [NSNumber numberWithInteger:9600], [NSNumber numberWithInteger:14400], [NSNumber numberWithInteger:19200], [NSNumber numberWithInteger:28800], [NSNumber numberWithInteger:38400], [NSNumber numberWithInteger:57600], [NSNumber numberWithInteger:115200], [NSNumber numberWithInteger:230400],
 								   nil];
-		
 		NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
 		[nc addObserver:self selector:@selector(serialPortsWereConnected:) name:ORSSerialPortsWereConnectedNotification object:nil];
 		[nc addObserver:self selector:@selector(serialPortsWereDisconnected:) name:ORSSerialPortsWereDisconnectedNotification object:nil];
@@ -76,10 +76,21 @@
 - (void)serialPort:(ORSSerialPort *)serialPort didReceiveData:(NSData *)data
 {
 	NSString *string = [[NSString alloc] initWithString:[data description]];
-    NSLog(@"bytes in hex: %@", [data description]);
 	if ([string length] == 0) return;
-	[self.receivedDataTextView.textStorage.mutableString appendString:string];
-	[self.receivedDataTextView setNeedsDisplay:YES];
+    
+    //int8_t test;
+    
+    //test = [data bytes];
+    
+    //NSUInteger size = [data length] / sizeof(unsigned char);
+    //unsigned char* array = (unsigned char*) [data bytes];
+    
+    //NSLog(@"Test = %hd", (test));
+    
+    //NSLog(@"Data length = %lu Data description = %@", ([data length]),([data description]));
+    
+    [self.receivedDataTextView.textStorage.mutableString appendString:string];
+    [self.receivedDataTextView setNeedsDisplay:YES];
 }
 
 - (void)serialPortWasRemovedFromSystem:(ORSSerialPort *)serialPort;

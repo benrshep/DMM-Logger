@@ -26,6 +26,7 @@
 
 @import Foundation;
 #import "ORSSerialPort.h"
+#import "DMMData.h"
 
 @class ORSSerialPortManager;
 
@@ -34,7 +35,7 @@
 @end
 #endif
 
-@interface ORSSerialPortDemoController : NSObject <ORSSerialPortDelegate, NSUserNotificationCenterDelegate>
+@interface DMMLoggerController : NSObject <ORSSerialPortDelegate, NSUserNotificationCenterDelegate>
 
 - (IBAction)openOrClosePort:(id)sender;
 
@@ -44,5 +45,6 @@
 @property (nonatomic, strong) ORSSerialPortManager *serialPortManager;
 @property (nonatomic, strong) ORSSerialPort *serialPort;
 @property (nonatomic, strong) NSArray *availableBaudRates;
+@property (nonatomic, strong) DMMData *dmmData;
 
 @end
